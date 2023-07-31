@@ -18,19 +18,19 @@
 ]]
 
 -- virtual resolution handling library
-push = require 'push'
+push = require 'mycodee.libraries.push'
 
 -- classic OOP class library
-Class = require 'class'
+Class = require 'mycodee.libraries.class'
 
 -- bird class we've written
-require 'Bird'
+require 'mycodee.objects.Bird'
 
 -- pipe class we've written
-require 'Pipe'
+require 'mycodee.objects.Pipe'
 
 -- class representing pair of pipes together
-require 'PipePair'
+require 'mycodee.objects.PipePair'
 
 -- physical screen dimensions
 WINDOW_WIDTH = 1280
