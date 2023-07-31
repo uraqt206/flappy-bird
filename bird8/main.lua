@@ -18,23 +18,23 @@
 ]]
 
 -- virtual resolution handling library
-push = require 'mycodee.libraries.push'
+push = require 'push'
 
 -- classic OOP class library
-Class = require 'mycodee.libraries.class'
+Class = require 'class'
 
 -- bird class we've written
-require 'mycodee.objects.Bird'
+require 'Bird'
 
 -- pipe class we've written
-require 'mycodee.objects.Pipe'
+require 'Pipe'
 
 -- class representing pair of pipes together
-require 'mycodee.objects.PipePair'
+require 'PipePair'
 
 -- all code related to game state and state machines
-require 'mycodee.libraries.StateMachine'
-require 'mycodee.states.BaseState'
+require 'StateMachine'
+require 'states/BaseState'
 require 'states/PlayState'
 require 'states/TitleScreenState'
 

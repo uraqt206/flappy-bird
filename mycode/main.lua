@@ -1,12 +1,12 @@
-push = require 'mycodee.libraries.push'
-Class = require 'mycodee.libraries.class'
-require 'mycodee.libraries.StateMachine'
-require 'mycodee.objects.Bird'
-require 'mycodee.objects.Pipe'
-require 'mycodee.objects.PipePair'
-require 'mycodee.states.BaseState'
-require 'mycodee.states.Title'
-require 'mycodee.states.Playing'
+push = require 'libraries/push'
+Class = require 'libraries/class'
+require 'libraries/StateMachine'
+require 'objects/Bird'
+require 'objects/Pipe'
+require 'objects/PipePair'
+require 'states/BaseState'
+require 'states/Title'
+require 'states/Playing'
 
 WINDOW_WIDTH, WINDOW_HEIGHT = 1280, 720
 VIRTUAL_WIDTH, VIRTUAL_HEIGHT = 512, 288

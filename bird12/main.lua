@@ -22,28 +22,28 @@
 -- a more retro aesthetic
 --
 -- https://github.com/Ulydev/push
-push = require 'mycodee.libraries.push'
+push = require 'push'
 
 -- the "Class" library we're using will allow us to represent anything in
 -- our game as code, rather than keeping track of many disparate variables and
 -- methods
 --
 -- https://github.com/vrld/hump/blob/master/class.lua
-Class = require 'mycodee.libraries.class'
+Class = require 'class'
 
 -- a basic StateMachine class which will allow us to transition to and from
 -- game states smoothly and avoid monolithic code in one file
-require 'mycodee.libraries.StateMachine'
+require 'StateMachine'
 
-require 'mycodee.states.BaseState'
+require 'states/BaseState'
 require 'states/CountdownState'
 require 'states/PlayState'
 require 'states/ScoreState'
 require 'states/TitleScreenState'
 
-require 'mycodee.objects.Bird'
-require 'mycodee.objects.Pipe'
-require 'mycodee.objects.PipePair'
+require 'Bird'
+require 'Pipe'
+require 'PipePair'
 
 -- physical screen dimensions
 WINDOW_WIDTH = 1280

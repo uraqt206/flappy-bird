@@ -15,7 +15,7 @@
 ]]
 
 -- virtual resolution handling library
-push = require 'mycodee.libraries.push'
+push = require 'push'
 
 -- physical screen dimensions
 WINDOW_WIDTH = 1280
