@@ -11,7 +11,7 @@
 ScoreState = Class{__includes = BaseState}
 
 --[[
-    When we enter the score state, we expect to receive the score
+    When we enter the score state, we expect to receive the scxore
     from the play state so we know what to render to the State.
 ]]
 function ScoreState:enter(params)
