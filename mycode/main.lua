@@ -6,7 +6,9 @@ require 'objects/Pipe'
 require 'objects/PipePair'
 require 'states/BaseState'
 require 'states/Title'
+require 'states/CountingDown'
 require 'states/Playing'
+require 'states/ScoreDisplay'
 
 WINDOW_WIDTH, WINDOW_HEIGHT = 1280, 720
 VIRTUAL_WIDTH, VIRTUAL_HEIGHT = 512, 288
@@ -45,11 +47,14 @@ function love.load()
 
     gStateMachine = StateMachine {
         ['title'] = function() return Title() end,
+        ['counting'] = function() return CountingDown() end,
         ['playing'] = function() return Playing() end,
+        ['score'] = function() return ScoreDisplay() end,
     }
     gStateMachine:change('title')
 
     mediumFont = love.graphics.newFont('fonts/font.ttf', 16)
+    giantFont = love.graphics.newFont('fonts/flappy.ttf', 60)
     scoreFont = love.graphics.newFont('fonts/flappy.ttf', 32)
 end
 
